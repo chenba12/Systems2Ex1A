@@ -40,7 +40,7 @@ void DeleteAdptArray(PAdptArray adptArray) {
 
 Result SetAdptArrayAt(PAdptArray adptArray, int index, PElement element) {
     if (element == NULL || adptArray == NULL) return FAIL;
-    if (adptArray->arrSize < index) {
+    if (adptArray->arrSize <= index) {
         PElement *arr = (PElement *) calloc((index + 1), sizeof(PElement));
         if (arr == NULL) {
             return FAIL;
