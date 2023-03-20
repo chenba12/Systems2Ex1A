@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include "AdptArray.h"
-
+//I based my code around what I wrote in the previous course's Exam moed A 
 typedef struct AdptArray_ {
     int arrSize;
     PElement *pElementArray;
