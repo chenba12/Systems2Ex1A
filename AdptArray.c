@@ -66,7 +66,7 @@ Result SetAdptArrayAt(PAdptArray adptArray, int index, PElement element) {
 }
 
 PElement GetAdptArrayAt(PAdptArray adptArray, int index) {
-    if (adptArray == NULL || index > adptArray->arrSize) return NULL;
+    if (adptArray == NULL || index >= adptArray->arrSize) return NULL;
     if (adptArray->pElementArray[index] == NULL) return NULL;
     PElement pElement = adptArray->copyFunc(adptArray->pElementArray[index]);
     return pElement;
