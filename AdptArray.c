@@ -16,7 +16,7 @@ PAdptArray CreateAdptArray(COPY_FUNC copyFunc, DEL_FUNC delFunc, PRINT_FUNC prin
     if (adptArray == NULL) {
         return NULL;
     }
-    adptArray->arrSize = 1;
+    adptArray->arrSize = 0;
     PElement *array = (PElement *) calloc((adptArray->arrSize), sizeof(PElement));
     if (array == NULL) {
         return NULL;
